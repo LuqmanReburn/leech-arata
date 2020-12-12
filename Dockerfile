@@ -10,7 +10,7 @@ RUN apt -qq update
 ENV DEBIAN_FRONTEND=noninteractive
 ENV TZ=Asia/Kolkata
 
-
+RUN apt -qq install -y git unzip unrar tar python3 ffmpeg python3-pip
 
 RUN wget https://rclone.org/install.sh
 RUN bash install.sh
